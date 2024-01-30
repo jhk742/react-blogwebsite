@@ -99,6 +99,7 @@
     background-color: #000;
     color: #fff;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .btn--login {

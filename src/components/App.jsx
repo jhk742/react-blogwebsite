@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
@@ -13,6 +13,13 @@ export default function App() {
 
   const [isAuth, setIsAuth] = useState(false)
 
+  useEffect(() => {
+    // Check localStorage for the authentication state on component mount
+    const storedIsAuth = localStorage.getItem('isAuth')
+    if (storedIsAuth) {
+      setIsAuth(storedIsAuth === 'true')
+    }
+  }, []);
 
   const signUserOut = () => {
     signOut(auth).then(() => {
