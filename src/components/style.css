@@ -158,3 +158,11 @@
     right: 1%;
     cursor: pointer;
 }
+
+.loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+    font-size: 50px;
+    font-weight: bold;
+}

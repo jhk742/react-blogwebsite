@@ -53,7 +53,7 @@ export default function Home({isAuth}) {
     return (
         <div>
             <ul>
-                {loading ? <p className="loading">Loading...</p> : postsToRender}
+                {loading ? <p className="loading">Loading Data...</p> : postsToRender}
             </ul>
         </div>
     )
