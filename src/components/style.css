@@ -135,6 +135,7 @@
     background-color: #000;
     padding: 10px;
     border-radius: 10px;
+    position: relative;
 }
 
 .content--header {
@@ -145,5 +146,14 @@
 }
 
 .postText {
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
+}
+
+.trashcan-svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    cursor: pointer;
 }

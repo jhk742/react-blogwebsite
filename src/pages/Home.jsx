@@ -30,18 +30,14 @@ export default function Home() {
     }, [])
 
     const postsToRender = posts.map((doc, index) => {
-        console.log(doc)
         return (
-            <li>
+            <li key={index}>
                 <Post 
-                    key={index}
                     doc={doc}
                 />
             </li>
         )
     })
-    
-    console.log(posts)
 
     return (
         <div>
